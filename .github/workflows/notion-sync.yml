@@ -1,0 +1,44 @@
+name: Notion Auto-Sync
+
+on:
+  workflow_dispatch: # Trigger manually or via API (from Notion button webhook)
+  repository_dispatch: # External triggers if you want to call via a webhook
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout repository
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # 2. Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # 4. Run sync script
+      - name: Sync content from Notion
+        run: npm run sync:all
+        env:
+          NOTION_SECRET: ${{ secrets.NOTION_SECRET }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+
+      # 5. Commit + push changes (only if new content exists)
+      - name: Commit & Push
+        run: |
+          git config user.name "Notion Bot"
+          git config user.email "bot@speedyip.com"
+          git add content/
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto-sync from Notion: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+            git push origin main
+          else
+            echo "✅ No changes to commit."
+          fi

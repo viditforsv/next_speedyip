@@ -1,0 +1,1779 @@
+{
+  "title": "How to file a Trademark",
+  "slug": "how-to-file-trademark",
+  "date": "2025-09-07",
+  "tags": [
+    "trademark",
+    "guide"
+  ],
+  "excerpt": "Complete guide to trademark filing",
+  "blocks": [
+    {
+      "object": "block",
+      "id": "2679757e-9d89-802a-9955-c6e9019dce84",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Here’s a demo of what ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Here’s a demo of what ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Notion rich text",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Notion rich text",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " looks like when fetched from the ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " looks like when fetched from the ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Blocks API",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Blocks API",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ":",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ":",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-80dd-8cb7-d58b75c6aae3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-80a7-b042-e82d00ff6402",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "📖 Example Notion Page Content",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "📖 Example Notion Page Content",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-80ea-b7d2-d246cbfc6630",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Heading 1:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Heading 1:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-8028-a8fb-ce5ce8c1bcab",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "quote",
+      "quote": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "📝 \"Patent Filing Process\"",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "📝 \"Patent Filing Process\"",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-8018-aa26-deb6b47b46cf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Paragraph (with styles):",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Paragraph (with styles):",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-80eb-b5f8-e2c4b3eff22a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "quote",
+      "quote": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "This is a bold statement, an italic note, and an inline link.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "This is a bold statement, an italic note, and an inline link.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-80ab-829b-dbc6b52d3fdb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-80c0-a437-f87b0a622c16",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Bulleted List:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Bulleted List:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-804f-9106-e31b7868ea4b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Step 1: Novelty Search 🔍",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Step 1: Novelty Search 🔍",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-801f-9b70-cefc33f94e91",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Step 2: Draft Provisional Application ✍️",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Step 2: Draft Provisional Application ✍️",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-8090-9a7c-ee25e4432d69",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Step 3: File Complete Specification 📄",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Step 3: File Complete Specification 📄",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-8030-9a75-ee4229324dfd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Numbered List:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Numbered List:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-80a0-862b-e759cee8e512",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Prepare documents",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Prepare documents",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-8083-98d1-d1fb2439abd9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Submit to IPO",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Submit to IPO",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-80be-9d90-c3866a225c75",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Respond to FER",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Respond to FER",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-8090-93fb-e689c08a922c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Quote Block:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Quote Block:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-8001-8748-f7c577967fc3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "quote",
+      "quote": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "“Innovation distinguishes between a leader and a follower.” — Steve Jobs",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "“Innovation distinguishes between a leader and a follower.” — Steve Jobs",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-8049-bbd4-dc1f3a96c5f4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Callout Block:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Callout Block:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-80e4-a7d6-d193dc97def6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "💡 ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "💡 ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Pro Tip:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Pro Tip:",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " Always run a novelty search before filing.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Always run a novelty search before filing.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-80bb-83f9-f3407c6eb7a5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Code Block:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Code Block:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-80d8-b402-d558e9246412",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "code",
+      "code": {
+        "caption": [],
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "const filePatent = async () => {\n  console.log(\"Filing patent with SpeedyIP...\");\n};\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "const filePatent = async () => {\n  console.log(\"Filing patent with SpeedyIP...\");\n};\n",
+            "href": null
+          }
+        ],
+        "language": "javascript"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-8004-b7fb-c4711f73a4aa",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Image Block (Notion-hosted):",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Image Block (Notion-hosted):",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-801f-bfe7-d4f2a5d82baf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-807c-836f-e3a02e8c2a0a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "👉 This is the kind of formatting your ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "👉 This is the kind of formatting your ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "clients already use in Notion",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "clients already use in Notion",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ".",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ".",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-80a1-8280-c7e9bc9cb895",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The Notion ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "The Notion ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Blocks API",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Blocks API",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " will return these as JSON objects, and in Next.js you can render them with a component that maps:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " will return these as JSON objects, and in Next.js you can render them with a component that maps:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-8085-928c-e17c4e4941b8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "heading_1",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "heading_1",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "heading_2",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "heading_2",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " → ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " → ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "<h1>, <h2>",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "<h1>, <h2>",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-804d-ab60-ee2734f9f760",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "paragraph",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "paragraph",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " → ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " → ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "<p>",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "<p>",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-8003-b8f4-e5c3888dd689",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "bulleted_list_item",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "bulleted_list_item",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " → ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " → ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "<ul><li>",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "<ul><li>",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-80b8-9456-dd449334ea0b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "image",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "image",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " → ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " → ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "<img>",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "<img>",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-8064-9cf1-c559f0d19317",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Do you want me to build you a ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Do you want me to build you a ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Next.js renderer component",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Next.js renderer component",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " (",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " (",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "NotionRenderer.tsx",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "NotionRenderer.tsx",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ") that converts these blocks into styled HTML automatically?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ") that converts these blocks into styled HTML automatically?",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-8069-9060-d580273c2480",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:44:00.000Z",
+      "last_edited_time": "2025-09-07T07:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2679757e-9d89-8010-bfa6-f56f0fca7b05",
+      "parent": {
+        "type": "page_id",
+        "page_id": "2679757e-9d89-80ec-b980-db7e172385de"
+      },
+      "created_time": "2025-09-07T07:45:00.000Z",
+      "last_edited_time": "2025-09-07T07:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "a1b44aa2-9258-4266-bf4e-28f1b154b0cd"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "color": "default"
+      }
+    }
+  ],
+  "pageId": "2679757e-9d89-80ec-b980-db7e172385de"
+}
