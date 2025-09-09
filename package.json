@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
+    "build:sitemap": "next build && node scripts/generateSitemap.js",
+    "sitemap": "node scripts/generateSitemap.js",
     "start": "next start",
     "lint": "eslint",
     "sync:cms": "node scripts/fetchNotion.js",

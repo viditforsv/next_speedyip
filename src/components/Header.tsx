@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import ServicesDropdown from '@/components/ui/ServicesDropdown';
 
 export default function Header() {
   return (
@@ -28,6 +29,7 @@ export default function Header() {
             >
               Home
             </Link>
+            <ServicesDropdown />
             <Link 
               href="/blog" 
               className="text-gray-600 hover:text-gray-900 transition-colors font-medium"
@@ -39,7 +41,7 @@ export default function Header() {
               className="font-medium"
               style={{ backgroundColor: '#13292a', color: '#ffffff' }}
             >
-              <Link href="#lead-capture">Get Quote</Link>
+              <Link href="#contact">Get Quote</Link>
             </Button>
           </nav>
 
