@@ -116,7 +116,6 @@ const serviceDropdowns: ServiceDropdown[] = [
 
 export default function ServicesDropdown() {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
-  const [isHovering, setIsHovering] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -126,13 +125,11 @@ export default function ServicesDropdown() {
       timeoutRef.current = null;
     }
     setActiveDropdown(index);
-    setIsHovering(true);
   };
 
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setActiveDropdown(null);
-      setIsHovering(false);
     }, 200); // 200ms delay to prevent flickering
   };
 
@@ -141,13 +138,11 @@ export default function ServicesDropdown() {
       clearTimeout(timeoutRef.current);
       timeoutRef.current = null;
     }
-    setIsHovering(true);
   };
 
   const handleDropdownMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setActiveDropdown(null);
-      setIsHovering(false);
     }, 200);
   };
 

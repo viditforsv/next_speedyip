@@ -10,7 +10,7 @@ export interface BlogPost {
   tags: string[];
   excerpt: string;
   content?: string;
-  blocks?: any[];
+  blocks?: unknown[];
   isRichContent: boolean;
 }
 
@@ -40,7 +40,7 @@ export async function getAllPosts(): Promise<BlogPost[]> {
         const richFilePath = path.join(blogDir, `${slug}-rich.json`);
         const hasRichContent = fs.existsSync(richFilePath);
         
-        let blocks: any[] = [];
+        let blocks: unknown[] = [];
         if (hasRichContent) {
           try {
             const richContent = fs.readFileSync(richFilePath, 'utf8');

@@ -7,7 +7,51 @@ import Image from 'next/image';
 interface NotionBlock {
   id: string;
   type: string;
-  [key: string]: any;
+  paragraph?: {
+    rich_text: NotionRichText[];
+  };
+  heading_1?: {
+    rich_text: NotionRichText[];
+  };
+  heading_2?: {
+    rich_text: NotionRichText[];
+  };
+  heading_3?: {
+    rich_text: NotionRichText[];
+  };
+  bulleted_list_item?: {
+    rich_text: NotionRichText[];
+  };
+  numbered_list_item?: {
+    rich_text: NotionRichText[];
+  };
+  image?: {
+    external?: {
+      url: string;
+    };
+    file?: {
+      url: string;
+    };
+    caption?: NotionRichText[];
+  };
+  code?: {
+    rich_text: NotionRichText[];
+    language?: string;
+  };
+  quote?: {
+    rich_text: NotionRichText[];
+  };
+  callout?: {
+    rich_text: NotionRichText[];
+    icon?: {
+      emoji?: string;
+    };
+  };
+  divider?: Record<string, never>;
+  toggle?: {
+    rich_text: NotionRichText[];
+  };
+  [key: string]: unknown;
 }
 
 interface NotionRichText {
@@ -16,6 +60,7 @@ interface NotionRichText {
     content: string;
     link?: { url: string };
   };
+  plain_text?: string;
   annotations?: {
     bold?: boolean;
     italic?: boolean;
@@ -35,7 +80,7 @@ function renderRichText(richText: NotionRichText[]): React.ReactNode {
   if (!richText || richText.length === 0) return null;
 
   return richText.map((text, index) => {
-    let content = text.text?.content || '';
+    let content: React.ReactNode = text.text?.content || '';
     
     if (text.text?.link) {
       content = (
@@ -45,7 +90,7 @@ function renderRichText(richText: NotionRichText[]): React.ReactNode {
           rel="noopener noreferrer"
           className="text-blue-600 hover:text-blue-800 underline"
         >
-          {content}
+          {text.text.content}
         </a>
       );
     }
@@ -69,7 +114,7 @@ function renderRichText(richText: NotionRichText[]): React.ReactNode {
 
 // Individual block renderers
 function renderBlock(block: NotionBlock): React.ReactNode {
-  const { type, id } = block;
+  const { type } = block;
 
   try {
     switch (type) {
@@ -126,7 +171,7 @@ function renderBlock(block: NotionBlock): React.ReactNode {
       // Validate URL before using it
       try {
         new URL(imageUrl);
-      } catch (error) {
+      } catch {
         console.warn('Invalid image URL:', imageUrl);
         return (
           <div className="my-6">
@@ -143,7 +188,7 @@ function renderBlock(block: NotionBlock): React.ReactNode {
           <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden">
             <Image
               src={imageUrl}
-              alt={imageCaption.length > 0 ? imageCaption[0].plain_text : 'Image'}
+              alt={imageCaption.length > 0 ? (imageCaption[0].plain_text || 'Image') : 'Image'}
               fill
               className="object-cover"
             />

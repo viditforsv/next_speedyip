@@ -90,7 +90,7 @@ export default function ServicesPage() {
                     
                     <div className="space-y-3">
                       <h4 className="font-semibold text-sm" style={{ color: '#333333' }}>
-                        What's Included:
+                        What&apos;s Included:
                       </h4>
                       <ul className="space-y-2">
                         {service.features.map((feature, index) => (

@@ -3,7 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Copyright, Check, Clock, Users, Award, Shield, FileText, DollarSign, Target, Briefcase, Scale } from 'lucide-react';
+import { Copyright, Check, FileText, DollarSign, Target, Briefcase, Scale } from 'lucide-react';
 
 const userJourney = [
   {

@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
 import { useState, useEffect } from "react"
 import { 
   MousePointer, 
@@ -109,7 +108,6 @@ export default function ComponentsDemoPage() {
                   borderColor: '#e5e5e5', 
                   backgroundColor: '#FFFFFF',
                   color: '#333333',
-                  '--tw-ring-color': '#0066B2'
                 }}
               />
             </div>
@@ -124,7 +122,6 @@ export default function ComponentsDemoPage() {
                   borderColor: '#e5e5e5', 
                   backgroundColor: '#FFFFFF',
                   color: '#333333',
-                  '--tw-ring-color': '#0066B2'
                 }}
               />
             </div>
@@ -139,7 +136,6 @@ export default function ComponentsDemoPage() {
                   borderColor: '#e5e5e5', 
                   backgroundColor: '#FFFFFF',
                   color: '#333333',
-                  '--tw-ring-color': '#0066B2'
                 }}
               />
             </div>
@@ -154,7 +150,6 @@ export default function ComponentsDemoPage() {
                   borderColor: '#e5e5e5', 
                   backgroundColor: '#FFFFFF',
                   color: '#333333',
-                  '--tw-ring-color': '#0066B2'
                 }}
               />
             </div>
@@ -178,7 +173,6 @@ export default function ComponentsDemoPage() {
                   borderColor: '#28a745', 
                   backgroundColor: '#f8fff9',
                   color: '#333333',
-                  '--tw-ring-color': '#28a745'
                 }}
               />
               <p className="text-xs" style={{ color: '#28a745' }}>✓ Input is valid</p>
@@ -194,7 +188,6 @@ export default function ComponentsDemoPage() {
                   borderColor: '#dc3545', 
                   backgroundColor: '#fff8f8',
                   color: '#333333',
-                  '--tw-ring-color': '#dc3545'
                 }}
               />
               <p className="text-xs" style={{ color: '#dc3545' }}>✗ Please enter a valid email address</p>
@@ -238,7 +231,6 @@ export default function ComponentsDemoPage() {
                     borderColor: '#e5e5e5', 
                     backgroundColor: '#FFFFFF',
                     color: '#333333',
-                    '--tw-ring-color': '#0066B2'
                   }}
                 />
               </div>
@@ -252,7 +244,6 @@ export default function ComponentsDemoPage() {
                     borderColor: '#e5e5e5', 
                     backgroundColor: '#FFFFFF',
                     color: '#333333',
-                    '--tw-ring-color': '#0066B2'
                   }}
                 />
               </div>
@@ -268,7 +259,6 @@ export default function ComponentsDemoPage() {
                   borderColor: '#e5e5e5', 
                   backgroundColor: '#FFFFFF',
                   color: '#333333',
-                  '--tw-ring-color': '#0066B2'
                 }}
               />
             </div>
@@ -283,7 +273,6 @@ export default function ComponentsDemoPage() {
                   borderColor: '#e5e5e5', 
                   backgroundColor: '#FFFFFF',
                   color: '#333333',
-                  '--tw-ring-color': '#0066B2'
                 }}
               />
             </div>
@@ -296,7 +285,6 @@ export default function ComponentsDemoPage() {
                   borderColor: '#e5e5e5', 
                   backgroundColor: '#FFFFFF',
                   color: '#333333',
-                  '--tw-ring-color': '#0066B2'
                 }}
               >
                 <option>Select a service</option>

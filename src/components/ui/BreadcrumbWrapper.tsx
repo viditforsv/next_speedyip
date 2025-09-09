@@ -11,7 +11,7 @@ export default function BreadcrumbWrapper() {
   
   const getBreadcrumbs = () => {
     const segments = pathname.split('/').filter(Boolean);
-    const breadcrumbs = [];
+    const breadcrumbs: Array<{ label: string; href: string | undefined }> = [];
     
     // Build breadcrumb items based on path segments
     let currentPath = '';

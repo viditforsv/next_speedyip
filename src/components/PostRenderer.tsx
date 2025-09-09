@@ -7,6 +7,13 @@ import { Button } from '@/components/ui/button';
 import NotionBlockRenderer from '@/components/NotionBlockRenderer';
 import { BlogPost } from '@/lib/blog';
 
+// Import the NotionBlock type from NotionBlockRenderer
+interface NotionBlock {
+  id: string;
+  type: string;
+  [key: string]: unknown;
+}
+
 interface PostRendererProps {
   post: BlogPost;
 }
@@ -54,7 +61,7 @@ export default function PostRenderer({ post }: PostRendererProps) {
           {/* Content */}
           <div className="prose prose-lg max-w-none">
             {post.isRichContent && post.blocks && post.blocks.length > 0 ? (
-              <NotionBlockRenderer blocks={post.blocks} />
+              <NotionBlockRenderer blocks={post.blocks as NotionBlock[]} />
             ) : post.content ? (
               <p className="text-gray-700 leading-relaxed whitespace-pre-line">
                 {post.content}
