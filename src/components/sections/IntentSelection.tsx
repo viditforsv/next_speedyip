@@ -16,7 +16,7 @@ interface IntentCardProps {
 
 const IntentCard = ({ title, description, icon, badge, isSelected, onClick }: IntentCardProps) => (
   <Card 
-    className={`cursor-pointer transition-all duration-300 hover:shadow-lg ${
+    className={`cursor-pointer transition-all duration-300 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 ${
       isSelected ? 'shadow-lg' : 'hover:shadow-md'
     }`}
     style={{ 
@@ -25,10 +25,20 @@ const IntentCard = ({ title, description, icon, badge, isSelected, onClick }: In
       backgroundColor: isSelected ? '#f5f1ed' : '#ffffff'
     }}
     onClick={onClick}
+    onKeyDown={(e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        onClick();
+      }
+    }}
+    tabIndex={0}
+    role="button"
+    aria-pressed={isSelected}
+    aria-label={`Select ${title} - ${description}`}
   >
     <CardContent className="p-6 text-center space-y-4">
       <div className="mx-auto w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#e7ded9' }}>
-        <div style={{ color: '#13292a' }}>{icon}</div>
+        <div style={{ color: '#13292a' }} aria-hidden="true">{icon}</div>
       </div>
       <Badge 
         variant={isSelected ? "default" : "secondary"} 
@@ -43,7 +53,7 @@ const IntentCard = ({ title, description, icon, badge, isSelected, onClick }: In
       <h3 className="text-xl font-semibold" style={{ color: '#13292a' }}>{title}</h3>
       <p className="text-sm leading-relaxed" style={{ color: '#695853' }}>{description}</p>
       <div className="flex items-center justify-center font-medium text-sm" style={{ color: '#988780' }}>
-        Learn More <ArrowRight className="ml-1 h-4 w-4" />
+        Learn More <ArrowRight className="ml-1 h-4 w-4" aria-hidden="true" />
       </div>
     </CardContent>
   </Card>
@@ -87,11 +97,19 @@ export default function IntentSelection() {
   }
 
   return (
-    <section className="py-20 px-4" style={{ backgroundColor: '#ffffff' }}>
+    <section 
+      className="py-20 px-4" 
+      style={{ backgroundColor: '#ffffff' }}
+      aria-labelledby="intent-heading"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center space-y-8">
           <div className="space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold" style={{ color: '#13292a' }}>
+            <h2 
+              id="intent-heading"
+              className="text-3xl md:text-4xl font-bold" 
+              style={{ color: '#13292a' }}
+            >
               What&apos;s Your Patent Goal?
             </h2>
             <p className="text-xl max-w-2xl mx-auto" style={{ color: '#695853' }}>
@@ -99,7 +117,12 @@ export default function IntentSelection() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div 
+            className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto" 
+            role="radiogroup" 
+            aria-labelledby="intent-heading"
+            aria-label="Patent goal selection"
+          >
             {intents.map((intent) => (
               <IntentCard
                 key={intent.id}
@@ -114,9 +137,14 @@ export default function IntentSelection() {
           </div>
 
           {selectedIntent && (
-            <div className="mt-8 p-4 rounded-lg max-w-2xl mx-auto" style={{ backgroundColor: '#e7ded9' }}>
+            <div 
+              className="mt-8 p-4 rounded-lg max-w-2xl mx-auto" 
+              style={{ backgroundColor: '#e7ded9' }}
+              role="status"
+              aria-live="polite"
+            >
               <p className="font-medium" style={{ color: '#13292a' }}>
-                ✓ Selected: {intents.find(i => i.id === selectedIntent)?.title}
+                <span aria-hidden="true">✓</span> Selected: {intents.find(i => i.id === selectedIntent)?.title}
               </p>
               <p className="text-sm mt-1" style={{ color: '#695853' }}>
                 Scroll down to see your customized patent timeline

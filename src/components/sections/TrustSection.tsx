@@ -72,10 +72,10 @@ export default function TrustSection() {
         <div className="text-center space-y-8 mb-16">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Trusted by Innovators Worldwide
+              Trusted Patent Filing Service - 500+ Patents Filed Successfully
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Our track record speaks for itself
+              Leading patent filing service with USPTO-certified attorneys and 95% success rate
             </p>
           </div>
 

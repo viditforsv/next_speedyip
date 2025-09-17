@@ -53,10 +53,10 @@ export default function FAQSection() {
         <div className="text-center space-y-8 mb-12">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Frequently Asked Questions
+              Patent Filing FAQ - Common Questions About Patent Services
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Get answers to common questions about our patent services
+              Expert answers to frequently asked questions about patent filing, costs, timeline, and USPTO requirements
             </p>
           </div>
         </div>
@@ -97,10 +97,10 @@ export default function FAQSection() {
                   className="bg-blue-600 hover:bg-blue-700"
                   onClick={() => document.getElementById('lead-capture')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                  Get Free Consultation
+                  Get Free Patent Consultation
                 </Button>
                 <Button variant="outline" className="border-blue-300 text-blue-700 hover:bg-blue-100">
-                  Call (555) 123-4567
+                  Call Patent Attorney (555) 123-4567
                 </Button>
               </div>
             </div>

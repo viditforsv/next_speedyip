@@ -7,7 +7,6 @@ import StageTimeline from '@/components/sections/StageTimeline'
 import TrustSection from '@/components/sections/TrustSection'
 import FAQSection from '@/components/sections/FAQSection'
 import FinalCTA from '@/components/sections/FinalCTA'
-import StickyCTA from '@/components/ui/StickyCTA'
 
 // Metadata moved to layout.tsx for client component
 
@@ -15,10 +14,10 @@ const schemaMarkup = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   name: 'SpeedyIP',
-  description: 'Professional patent filing services with expert attorneys and fast-track processing',
+  alternateName: 'SpeedyIP Patent Services',
+  description: 'Professional patent filing services with expert attorneys and fast-track processing.',
   url: 'https://speedyip.com',
-  logo: 'https://speedyip.com/logo.png',
-  image: 'https://speedyip.com/hero-image.jpg',
+  logo: 'https://speedyip.com/speedyip_logo.png',
   telephone: '+1-555-123-4567',
   email: 'hello@speedyip.com',
   address: {
@@ -28,11 +27,6 @@ const schemaMarkup = {
     addressRegion: 'CA',
     postalCode: '94105',
     addressCountry: 'US',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: '37.7749',
-    longitude: '-122.4194',
   },
   openingHours: 'Mo-Fr 09:00-18:00',
   priceRange: '$3500-$15000',
@@ -120,15 +114,12 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
       />
-      <main className="min-h-screen">
-        <HeroSection />
-        <IntentSelection />
-        <StageTimeline />
-        <TrustSection />
-        <FAQSection />
-        <FinalCTA />
-        <StickyCTA />
-      </main>
+      <HeroSection />
+      <IntentSelection />
+      <StageTimeline />
+      <TrustSection />
+      <FAQSection />
+      <FinalCTA />
     </>
   )
 }

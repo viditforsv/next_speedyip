@@ -14,12 +14,12 @@ export default function FinalCTA() {
           </Badge>
           
           <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-            Ready to Protect Your Innovation?
+            Ready to File Your Patent? Get Expert Patent Attorney Help Today
           </h2>
           
           <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
-            Join hundreds of successful inventors who trust SpeedyIP with their most valuable ideas. 
-            Get started today and secure your competitive advantage.
+            Join 500+ successful inventors who trust SpeedyIP with their patent applications. 
+            USPTO-certified attorneys ready to protect your innovation with 30-day filing guarantee.
           </p>
         </div>
 
@@ -44,16 +44,21 @@ export default function FinalCTA() {
             className="text-lg px-8 py-6 bg-white text-blue-600 hover:bg-gray-100"
             onClick={() => document.getElementById('lead-capture')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            Compare Plans
+            Compare Patent Filing Plans
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
           <Button 
             size="lg" 
             variant="outline" 
-            className="text-lg px-8 py-6 border-2 border-white text-white hover:bg-white hover:text-blue-600"
+            className="text-lg px-8 py-6 border-2 border-white text-white hover:bg-white hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600"
+            style={{ 
+              backgroundColor: 'transparent',
+              borderColor: '#ffffff',
+              color: '#ffffff'
+            }}
           >
-            Talk to Attorney
-            <Phone className="ml-2 h-5 w-5" />
+            Talk to Patent Attorney
+            <Phone className="ml-2 h-5 w-5" aria-hidden="true" />
           </Button>
         </div>
 

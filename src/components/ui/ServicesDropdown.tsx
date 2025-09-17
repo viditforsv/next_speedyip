@@ -116,8 +116,10 @@ const serviceDropdowns: ServiceDropdown[] = [
 
 export default function ServicesDropdown() {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
+  const [isOpen, setIsOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLAnchorElement>(null);
 
   const handleMouseEnter = (index: number) => {
     if (timeoutRef.current) {
@@ -125,11 +127,13 @@ export default function ServicesDropdown() {
       timeoutRef.current = null;
     }
     setActiveDropdown(index);
+    setIsOpen(true);
   };
 
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setActiveDropdown(null);
+      setIsOpen(false);
     }, 200); // 200ms delay to prevent flickering
   };
 
@@ -143,7 +147,24 @@ export default function ServicesDropdown() {
   const handleDropdownMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setActiveDropdown(null);
+      setIsOpen(false);
     }, 200);
+  };
+
+  const handleKeyDown = (event: React.KeyboardEvent) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      setIsOpen(!isOpen);
+      if (!isOpen) {
+        setActiveDropdown(-1);
+      } else {
+        setActiveDropdown(null);
+      }
+    } else if (event.key === 'Escape') {
+      setIsOpen(false);
+      setActiveDropdown(null);
+      triggerRef.current?.focus();
+    }
   };
 
   // Cleanup timeout on unmount
@@ -159,15 +180,20 @@ export default function ServicesDropdown() {
     <div className="relative" ref={dropdownRef}>
       {/* Main Services Link */}
       <Link
+        ref={triggerRef}
         href="/services"
-        className="flex items-center gap-1 text-gray-600 hover:text-gray-900 transition-colors font-medium"
+        className="flex items-center gap-1 text-gray-600 hover:text-gray-900 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md px-2 py-1"
         onMouseEnter={() => handleMouseEnter(-1)}
         onMouseLeave={handleMouseLeave}
+        onKeyDown={handleKeyDown}
+        aria-expanded={isOpen}
+        aria-haspopup="true"
+        aria-label="Services menu"
       >
         Services
         <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${
           activeDropdown !== null ? 'rotate-180' : ''
-        }`} />
+        }`} aria-hidden="true" />
       </Link>
 
       {/* Dropdown Menu */}
@@ -176,6 +202,8 @@ export default function ServicesDropdown() {
           className="absolute top-full left-0 mt-2 w-80 bg-white border border-gray-200 rounded-lg shadow-xl z-50"
           onMouseEnter={handleDropdownMouseEnter}
           onMouseLeave={handleDropdownMouseLeave}
+          role="menu"
+          aria-label="Services submenu"
           style={{
             animation: 'fadeInDown 0.2s ease-out'
           }}

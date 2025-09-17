@@ -122,10 +122,10 @@ export default function StageTimeline() {
         <div className="text-center space-y-8 mb-12">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Your Patent Journey Timeline
+              Patent Filing Process Timeline - From Search to Grant
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              From initial search to patent grant - see exactly what happens and when
+              Complete patent filing process from initial novelty search to patent grant. Expert USPTO-certified attorneys guide you through each step.
             </p>
           </div>
         </div>
