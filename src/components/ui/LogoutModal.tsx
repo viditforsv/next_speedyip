@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { X, Mail, Phone, User } from 'lucide-react';
@@ -23,6 +23,7 @@ export default function LogoutModal({ isOpen, onClose, onLogout }: LogoutModalPr
     phone: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({
@@ -97,9 +98,26 @@ export default function LogoutModal({ isOpen, onClose, onLogout }: LogoutModalPr
 
   const handleClose = () => {
     if (!isSubmitting) {
-      onClose();
+      setIsVisible(false);
+      // Delay the actual close to allow animation to complete
+      setTimeout(() => {
+        onClose();
+      }, 200);
     }
   };
+
+  // Handle fade-in effect when modal opens
+  useEffect(() => {
+    if (isOpen) {
+      // Small delay before showing modal for smooth appearance
+      const timer = setTimeout(() => {
+        setIsVisible(true);
+      }, 100);
+      return () => clearTimeout(timer);
+    } else {
+      setIsVisible(false);
+    }
+  }, [isOpen]);
 
   if (!isOpen) return null;
 
@@ -107,12 +125,16 @@ export default function LogoutModal({ isOpen, onClose, onLogout }: LogoutModalPr
     <div className="fixed inset-0 z-50 flex items-center justify-center">
       {/* Backdrop */}
       <div 
-        className="absolute inset-0 bg-black bg-opacity-50 transition-opacity"
+        className={`absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ${
+          isVisible ? 'opacity-100' : 'opacity-0'
+        }`}
         onClick={handleClose}
       />
       
       {/* Modal */}
-      <div className="relative bg-white rounded-lg shadow-xl max-w-md w-full mx-4 transform transition-all">
+      <div className={`relative bg-white rounded-lg shadow-xl max-w-md w-full mx-4 transform transition-all duration-300 ${
+        isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+      }`}>
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-gray-200">
           <h2 className="text-xl font-semibold" style={{ color: '#333333' }}>
