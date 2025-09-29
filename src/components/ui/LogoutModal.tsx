@@ -116,7 +116,7 @@ export default function LogoutModal({ isOpen, onClose, onLogout }: LogoutModalPr
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-gray-200">
           <h2 className="text-xl font-semibold" style={{ color: '#333333' }}>
-            Stay Connected
+            Contact Us
           </h2>
           <button
             onClick={handleClose}
@@ -131,7 +131,7 @@ export default function LogoutModal({ isOpen, onClose, onLogout }: LogoutModalPr
         {/* Content */}
         <div className="p-6">
           <p className="text-sm mb-6" style={{ color: '#6c757d' }}>
-            Before you leave, we&apos;d love to stay in touch! Please share your contact information so we can send you updates about our IP services.
+            If you need help with intellectual property services, please fill out the form below.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -204,7 +204,7 @@ export default function LogoutModal({ isOpen, onClose, onLogout }: LogoutModalPr
             {/* Privacy Notice */}
             <div className="bg-gray-50 p-3 rounded-lg">
               <p className="text-xs" style={{ color: '#6c757d' }}>
-                <strong>Privacy Notice:</strong> We respect your privacy and will only use your information to send you relevant updates about our IP services. You can unsubscribe at any time.
+                <strong>Privacy Notice:</strong> We will only use your information to contact you about our services. You can unsubscribe at any time.
               </p>
             </div>
 
@@ -222,7 +222,7 @@ export default function LogoutModal({ isOpen, onClose, onLogout }: LogoutModalPr
                   borderColor: '#e5e5e5' 
                 }}
               >
-                Skip
+                Cancel
               </Button>
               <Button
                 type="submit"
@@ -230,7 +230,7 @@ export default function LogoutModal({ isOpen, onClose, onLogout }: LogoutModalPr
                 className="flex-1"
                 style={{ backgroundColor: '#0066B2', color: '#FFFFFF' }}
               >
-                {isSubmitting ? 'Saving...' : 'Save & Continue'}
+                {isSubmitting ? 'Submitting...' : 'Submit'}
               </Button>
             </div>
           </form>
