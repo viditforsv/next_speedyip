@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { ChevronDown, Shield, FileText, Copyright } from 'lucide-react';
+import { ChevronDown, Shield, FileText, Copyright, Zap, Target, Building2 } from 'lucide-react';
 
 interface DropdownItem {
   title: string;
@@ -25,28 +25,22 @@ const serviceDropdowns: ServiceDropdown[] = [
     icon: <Shield className="h-4 w-4" />,
     items: [
       {
-        title: 'Patent Search & Analysis',
-        href: '/services/patents/search',
-        description: 'Comprehensive prior art search',
-        icon: <Shield className="h-4 w-4" />
+        title: 'Marketing (Fast Grant)',
+        href: '/services/patents/marketing',
+        description: 'Quick credibility & visibility',
+        icon: <Zap className="h-4 w-4" />
       },
       {
-        title: 'Patent Drafting',
-        href: '/services/patents/drafting',
-        description: 'Professional patent application',
-        icon: <Shield className="h-4 w-4" />
+        title: 'Enforcement (Commercialization)',
+        href: '/services/patents/enforcement',
+        description: 'Competitive protection & licensing',
+        icon: <Target className="h-4 w-4" />
       },
       {
-        title: 'USPTO Filing',
-        href: '/services/patents/filing',
-        description: 'Complete USPTO filing process',
-        icon: <Shield className="h-4 w-4" />
-      },
-      {
-        title: 'Patent Prosecution',
-        href: '/services/patents/prosecution',
-        description: 'Handle office actions & appeals',
-        icon: <Shield className="h-4 w-4" />
+        title: 'Strategic (Portfolio)',
+        href: '/services/patents/strategic',
+        description: 'Multi-jurisdiction IP strategy',
+        icon: <Building2 className="h-4 w-4" />
       }
     ]
   },

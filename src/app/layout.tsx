@@ -5,6 +5,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import WhatsAppFloater from '@/components/ui/WhatsAppFloater'
 import BreadcrumbWrapper from '@/components/ui/BreadcrumbWrapper'
+import PageExitModal from '@/components/PageExitModal'
 
 const exo2 = Exo_2({ 
   subsets: ['latin'],
@@ -91,6 +92,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <WhatsAppFloater />
+        <PageExitModal />
       </body>
     </html>
   )

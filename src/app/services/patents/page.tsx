@@ -2,7 +2,8 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Shield, Check, Clock, Users, Award, FileText } from 'lucide-react';
+import { Shield, Check, Clock, Users, Award, FileText, Zap, Target, Building2 } from 'lucide-react';
+import Link from 'next/link';
 
 const patentServices = [
   {
@@ -60,6 +61,63 @@ const processSteps = [
   }
 ];
 
+const customerSegments = [
+  {
+    title: 'Marketing (Fast Grant)',
+    subtitle: 'Quick Credibility & Visibility',
+    description: 'Perfect for startups, entrepreneurs, and academics who need fast patent grants for investor presentations and credibility building.',
+    icon: <Zap className="h-8 w-8" />,
+    features: [
+      '2-3 years to grant',
+      '₹1,65,000 - ₹2,00,000',
+      'Streamlined drafting',
+      'Grant-oriented approach',
+      'Investor presentations',
+      'Academic submissions'
+    ],
+    targetCustomers: 'Startups, Entrepreneurs, Academics, Investors',
+    pricing: '₹1,65,000 - ₹2,00,000',
+    timeline: '2-3 years',
+    bestFor: 'Quick grants, investor decks, academic submissions'
+  },
+  {
+    title: 'Enforcement (Commercialization)',
+    subtitle: 'Competitive Protection & Licensing',
+    description: 'Ideal for established companies and manufacturers who need strong, enforceable patent rights for competitive advantage and licensing opportunities.',
+    icon: <Target className="h-8 w-8" />,
+    features: [
+      '3-4 years to grant',
+      '₹2,95,000 - ₹3,50,000',
+      'Broad claim drafting',
+      'Multiple embodiments',
+      'Licensing opportunities',
+      'Enforcement readiness'
+    ],
+    targetCustomers: 'Established Companies, Manufacturers, Licensing Businesses',
+    pricing: '₹2,95,000 - ₹3,50,000',
+    timeline: '3-4 years',
+    bestFor: 'Competitive protection, licensing, enforcement'
+  },
+  {
+    title: 'Strategic (Portfolio)',
+    subtitle: 'Multi-Jurisdiction IP Strategy',
+    description: 'Designed for large corporations and multinational companies who need comprehensive IP strategy and multi-jurisdiction patent protection.',
+    icon: <Building2 className="h-8 w-8" />,
+    features: [
+      'Custom timeline',
+      'Custom pricing',
+      'Multi-jurisdiction filing',
+      'Portfolio strategy',
+      'Risk mitigation',
+      'Long-term IP management'
+    ],
+    targetCustomers: 'Large Corporations, Multinational Companies, IP-focused Businesses',
+    pricing: 'Custom quotes',
+    timeline: 'Variable',
+    bestFor: 'Corporate IP strategy, multi-jurisdiction protection'
+  }
+];
+
 export default function PatentsPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -76,21 +134,25 @@ export default function PatentsPage() {
                 to USPTO filing and prosecution, we guide you through every step of the patent process.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg"
-                  className="font-medium"
-                  style={{ backgroundColor: '#0066B2', color: '#FFFFFF' }}
-                >
-                  Get Patent Quote
-                </Button>
-                <Button 
-                  variant="outline"
-                  size="lg"
-                  className="font-medium"
-                  style={{ backgroundColor: '#FFFFFF', color: '#0066B2', borderColor: '#0066B2' }}
-                >
-                  Free Consultation
-                </Button>
+                <Link href="#contact">
+                  <Button 
+                    size="lg"
+                    className="font-medium"
+                    style={{ backgroundColor: '#0066B2', color: '#FFFFFF' }}
+                  >
+                    Get Patent Quote
+                  </Button>
+                </Link>
+                <Link href="#contact">
+                  <Button 
+                    variant="outline"
+                    size="lg"
+                    className="font-medium"
+                    style={{ backgroundColor: '#FFFFFF', color: '#0066B2', borderColor: '#0066B2' }}
+                  >
+                    Free Consultation
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className="flex justify-center">
@@ -102,8 +164,95 @@ export default function PatentsPage() {
         </div>
       </section>
 
-      {/* Services Overview */}
+      {/* Customer Segments */}
       <section className="py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold mb-4" style={{ color: '#333333' }}>
+              Choose Your Patent Strategy
+            </h2>
+            <p className="text-lg" style={{ color: '#6c757d' }}>
+              Three distinct approaches tailored to different business needs and budgets
+            </p>
+          </div>
+          
+          <div className="grid lg:grid-cols-3 gap-8">
+            {customerSegments.map((segment, index) => {
+              // Define the route for each segment
+              const segmentRoutes = ['/services/patents/marketing', '/services/patents/enforcement', '/services/patents/strategic'];
+              const segmentRoute = segmentRoutes[index];
+              
+              return (
+                <Link key={index} href={segmentRoute} className="group">
+                  <Card className="h-full transition-all duration-300 hover:shadow-xl hover:scale-105 cursor-pointer" 
+                        style={{ backgroundColor: '#FFFFFF', borderColor: '#e5e5e5' }}>
+                    <CardHeader className="text-center pb-4">
+                      <div className="mx-auto w-16 h-16 rounded-full flex items-center justify-center mb-4" 
+                           style={{ backgroundColor: '#e3f2fd' }}>
+                        <div style={{ color: '#0066B2' }}>{segment.icon}</div>
+                      </div>
+                      <CardTitle className="text-2xl font-bold" style={{ color: '#333333' }}>
+                        {segment.title}
+                      </CardTitle>
+                      <p className="text-lg font-semibold" style={{ color: '#0066B2' }}>
+                        {segment.subtitle}
+                      </p>
+                    </CardHeader>
+                    
+                    <CardContent className="space-y-6">
+                      <p className="text-center" style={{ color: '#6c757d' }}>
+                        {segment.description}
+                      </p>
+                      
+                      <div className="space-y-3">
+                        <h4 className="font-semibold text-sm" style={{ color: '#333333' }}>
+                          Key Features:
+                        </h4>
+                        <ul className="space-y-2">
+                          {segment.features.map((feature, idx) => (
+                            <li key={idx} className="flex items-center gap-2 text-sm" style={{ color: '#6c757d' }}>
+                              <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#0066B2' }}></div>
+                              {feature}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <div className="bg-gray-50 p-4 rounded-lg space-y-2">
+                        <div className="flex justify-between">
+                          <span className="text-sm font-medium" style={{ color: '#333333' }}>Pricing:</span>
+                          <span className="text-sm font-semibold" style={{ color: '#0066B2' }}>{segment.pricing}</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-sm font-medium" style={{ color: '#333333' }}>Timeline:</span>
+                          <span className="text-sm" style={{ color: '#6c757d' }}>{segment.timeline}</span>
+                        </div>
+                        <div className="pt-2">
+                          <span className="text-xs" style={{ color: '#6c757d' }}>
+                            Best for: {segment.bestFor}
+                          </span>
+                        </div>
+                      </div>
+                      
+                      <div className="pt-4">
+                        <Button 
+                          className="w-full font-medium group-hover:bg-blue-700"
+                          style={{ backgroundColor: '#0066B2', color: '#FFFFFF' }}
+                        >
+                          Choose {segment.title} →
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Services Overview */}
+      <section className="py-20 px-4" style={{ backgroundColor: '#f8f9fa' }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4" style={{ color: '#333333' }}>
@@ -184,13 +333,15 @@ export default function PatentsPage() {
           <p className="text-lg mb-8" style={{ color: '#6c757d' }}>
             Get expert guidance on patenting your invention and secure your intellectual property rights.
           </p>
-          <Button 
-            size="lg"
-            className="font-medium px-8 py-4"
-            style={{ backgroundColor: '#0066B2', color: '#FFFFFF' }}
-          >
-            Start Your Patent Application
-          </Button>
+          <Link href="#contact">
+            <Button 
+              size="lg"
+              className="font-medium px-8 py-4"
+              style={{ backgroundColor: '#0066B2', color: '#FFFFFF' }}
+            >
+              Start Your Patent Application
+            </Button>
+          </Link>
         </div>
       </section>
     </div>
