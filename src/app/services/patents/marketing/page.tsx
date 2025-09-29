@@ -2,7 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Zap, Check, Clock, Users, Award, FileText, ArrowLeft, Target, Building2 } from 'lucide-react';
+import { Zap, Check, Users, Award, FileText, ArrowLeft, Target, Building2 } from 'lucide-react';
 import Link from 'next/link';
 
 const marketingFeatures = [

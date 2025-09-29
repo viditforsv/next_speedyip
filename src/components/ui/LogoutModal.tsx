@@ -131,7 +131,7 @@ export default function LogoutModal({ isOpen, onClose, onLogout }: LogoutModalPr
         {/* Content */}
         <div className="p-6">
           <p className="text-sm mb-6" style={{ color: '#6c757d' }}>
-            Before you leave, we'd love to stay in touch! Please share your contact information so we can send you updates about our IP services.
+            Before you leave, we&apos;d love to stay in touch! Please share your contact information so we can send you updates about our IP services.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-4">

@@ -31,7 +31,7 @@ ${urls.map(url => `  <url>
 
 // Generate sitemap URLs
 function generateSitemapUrls() {
-  const urls = []
+  // const urls = []
 
   // Static pages
   const staticPages = [

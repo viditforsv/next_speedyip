@@ -454,7 +454,7 @@ export default function StrategicPatentsPage() {
             Design Your IP Strategy
           </h2>
           <p className="text-lg mb-8" style={{ color: '#6c757d' }}>
-            Let's create a comprehensive patent strategy that supports your business objectives and competitive position.
+            Let&apos;s create a comprehensive patent strategy that supports your business objectives and competitive position.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 

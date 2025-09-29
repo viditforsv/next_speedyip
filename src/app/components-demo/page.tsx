@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { useState, useEffect } from "react"
+import Image from "next/image"
 import { 
   MousePointer, 
   FileText, 
@@ -935,9 +936,11 @@ export default function ComponentsDemoPage() {
           <div className="p-6">
             <div className="mb-8">
               <div className="mb-4">
-                <img 
+                <Image 
                   src="/speedyip_logo.png" 
                   alt="SpeedyIP Logo" 
+                  width={120}
+                  height={32}
                   className="h-8 w-auto mb-2"
                 />
                 <div>

@@ -52,7 +52,7 @@ export default function PageExitModal({ enabled = true }: PageExitModalProps) {
       }
     };
 
-    const handlePageHide = (event: PageTransitionEvent) => {
+    const handlePageHide = () => {
       if (!pendingExit) {
         // Page is being unloaded
         setShowModal(true);
