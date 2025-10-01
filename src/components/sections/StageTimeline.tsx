@@ -117,14 +117,14 @@ export default function StageTimeline() {
   const [activeStage, setActiveStage] = useState('novelty')
 
   return (
-    <section id="stage-timeline" className="py-20 px-4 bg-gray-50">
+    <section id="stage-timeline" className="py-20 px-4" style={{ backgroundColor: '#f8f9fa' }}>
       <div className="max-w-7xl mx-auto">
         <div className="text-center space-y-8 mb-12">
           <div className="space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-bold" style={{ color: '#333333' }}>
               Patent Filing Process Timeline - From Search to Grant
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl max-w-2xl mx-auto" style={{ color: '#6c757d' }}>
               Complete patent filing process from initial novelty search to patent grant. Expert USPTO-certified attorneys guide you through each step.
             </p>
           </div>
@@ -137,31 +137,35 @@ export default function StageTimeline() {
               <Card 
                 key={stage.id}
                 className={`cursor-pointer transition-all duration-300 ${
-                  activeStage === stage.id ? 'ring-2 ring-blue-500 bg-blue-50' : 'hover:shadow-md'
+                  activeStage === stage.id ? 'ring-2 shadow-lg' : 'hover:shadow-md'
                 }`}
+                style={{
+                  ringColor: activeStage === stage.id ? '#0066B2' : undefined,
+                  backgroundColor: activeStage === stage.id ? '#e3f2fd' : '#ffffff'
+                }}
                 onClick={() => setActiveStage(stage.id)}
               >
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                      {stage.icon}
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#e3f2fd' }}>
+                      <div style={{ color: '#0066B2' }}>{stage.icon}</div>
                     </div>
                     <div className="flex-1 space-y-2">
                       <div className="flex items-center justify-between">
-                        <h3 className="text-lg font-semibold text-gray-900">
+                        <h3 className="text-lg font-semibold" style={{ color: '#333333' }}>
                           {stage.title}
                         </h3>
-                        <Badge variant="outline" className="text-xs">
+                        <Badge variant="outline" className="text-xs" style={{ borderColor: '#0066B2', color: '#0066B2' }}>
                           {stage.duration}
                         </Badge>
                       </div>
-                      <p className="text-gray-600 text-sm">{stage.description}</p>
+                      <p className="text-sm" style={{ color: '#6c757d' }}>{stage.description}</p>
                       <div className="space-y-1">
-                        <div className="flex justify-between text-xs text-gray-500">
+                        <div className="flex justify-between text-xs" style={{ color: '#6c757d' }}>
                           <span>Effort Level</span>
                           <span>{stage.effort}%</span>
                         </div>
-                        <Progress value={stage.effort} className="h-2" />
+                        <Progress value={stage.effort} className="h-2" style={{ backgroundColor: '#e3f2fd' }} />
                       </div>
                     </div>
                   </div>
@@ -184,34 +188,34 @@ export default function StageTimeline() {
                   <Card>
                     <CardContent className="p-6 space-y-6">
                       <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                          {stage.icon}
+                        <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#e3f2fd' }}>
+                          <div style={{ color: '#0066B2' }}>{stage.icon}</div>
                         </div>
                         <div>
-                          <h3 className="text-xl font-semibold text-gray-900">
+                          <h3 className="text-xl font-semibold" style={{ color: '#333333' }}>
                             {stage.title}
                           </h3>
-                          <p className="text-gray-600">{stage.description}</p>
+                          <p style={{ color: '#6c757d' }}>{stage.description}</p>
                         </div>
                       </div>
 
                       <div className="space-y-4">
-                        <div className="flex items-center gap-2 text-sm text-gray-600">
-                          <Calendar className="h-4 w-4" />
+                        <div className="flex items-center gap-2 text-sm" style={{ color: '#6c757d' }}>
+                          <Calendar className="h-4 w-4" style={{ color: '#0066B2' }} />
                           <span>Duration: {stage.duration}</span>
                         </div>
-                        <div className="flex items-center gap-2 text-sm text-gray-600">
-                          <Users className="h-4 w-4" />
+                        <div className="flex items-center gap-2 text-sm" style={{ color: '#6c757d' }}>
+                          <Users className="h-4 w-4" style={{ color: '#0066B2' }} />
                           <span>Team Effort: {stage.effort}%</span>
                         </div>
                       </div>
 
                       <div className="space-y-3">
-                        <h4 className="font-semibold text-gray-900">What We Do:</h4>
+                        <h4 className="font-semibold" style={{ color: '#333333' }}>What We Do:</h4>
                         <ul className="space-y-2">
                           {stage.details.map((detail, idx) => (
-                            <li key={idx} className="flex items-start gap-2 text-sm text-gray-600">
-                              <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
+                            <li key={idx} className="flex items-start gap-2 text-sm" style={{ color: '#6c757d' }}>
+                              <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: '#0066B2' }} />
                               {detail}
                             </li>
                           ))}

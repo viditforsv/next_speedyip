@@ -48,14 +48,14 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <section className="py-20 px-4 bg-gray-50">
+    <section className="py-20 px-4" style={{ backgroundColor: '#f8f9fa' }}>
       <div className="max-w-4xl mx-auto">
         <div className="text-center space-y-8 mb-12">
           <div className="space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-bold" style={{ color: '#333333' }}>
               Patent Filing FAQ - Common Questions About Patent Services
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl max-w-2xl mx-auto" style={{ color: '#6c757d' }}>
               Expert answers to frequently asked questions about patent filing, costs, timeline, and USPTO requirements
             </p>
           </div>
@@ -64,14 +64,14 @@ export default function FAQSection() {
         <div className="space-y-6">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border border-gray-200 rounded-lg px-6 mb-4">
+              <AccordionItem key={index} value={`item-${index}`} className="rounded-lg px-6 mb-4" style={{ border: '1px solid #e3f2fd' }}>
                 <AccordionTrigger className="text-left hover:no-underline py-6">
                   <div className="flex items-center gap-3">
-                    <HelpCircle className="h-5 w-5 text-blue-500 flex-shrink-0" />
-                    <span className="font-semibold text-gray-900">{faq.question}</span>
+                    <HelpCircle className="h-5 w-5 flex-shrink-0" style={{ color: '#0066B2' }} />
+                    <span className="font-semibold" style={{ color: '#333333' }}>{faq.question}</span>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pb-6 text-gray-700 leading-relaxed">
+                <AccordionContent className="pb-6 leading-relaxed" style={{ color: '#6c757d' }}>
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -81,25 +81,25 @@ export default function FAQSection() {
 
         {/* Contact CTA */}
         <div className="mt-12 text-center">
-          <Card className="bg-blue-50 border-blue-200 max-w-2xl mx-auto">
+          <Card className="max-w-2xl mx-auto" style={{ backgroundColor: '#e3f2fd', borderColor: '#0066B2' }}>
             <div className="p-8 space-y-4">
-              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
-                <MessageCircle className="h-6 w-6 text-blue-600" />
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto" style={{ backgroundColor: '#0066B2' }}>
+                <MessageCircle className="h-6 w-6" style={{ color: '#ffffff' }} />
               </div>
-              <h3 className="text-xl font-semibold text-blue-900">
+              <h3 className="text-xl font-semibold" style={{ color: '#0066B2' }}>
                 Still Have Questions?
               </h3>
-              <p className="text-blue-800">
+              <p style={{ color: '#0066B2' }}>
                 Our patent attorneys are here to help. Get personalized answers to your specific questions.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button 
-                  className="bg-blue-600 hover:bg-blue-700"
+                  style={{ backgroundColor: '#0066B2', color: '#ffffff' }}
                   onClick={() => document.getElementById('lead-capture')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Get Free Patent Consultation
                 </Button>
-                <Button variant="outline" className="border-blue-300 text-blue-700 hover:bg-blue-100">
+                <Button variant="outline" style={{ borderColor: '#0066B2', color: '#0066B2', backgroundColor: 'transparent' }}>
                   Call Patent Attorney (555) 123-4567
                 </Button>
               </div>
