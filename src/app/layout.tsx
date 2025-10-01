@@ -1,11 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Exo_2 } from 'next/font/google'
 import './globals.css'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-import WhatsAppFloater from '@/components/ui/WhatsAppFloater'
-import BreadcrumbWrapper from '@/components/ui/BreadcrumbWrapper'
-import PageExitModal from '@/components/PageExitModal'
+import ClientLayout from './ClientLayout'
 
 const exo2 = Exo_2({ 
   subsets: ['latin'],
@@ -53,6 +49,7 @@ export const viewport: Viewport = {
   initialScale: 1,
 }
 
+
 export default function RootLayout({
   children,
 }: {
@@ -85,14 +82,7 @@ export default function RootLayout({
           Skip to navigation
         </a>
         
-        <Header />
-        <BreadcrumbWrapper />
-        <main id="main-content" className="min-h-screen" role="main">
-          {children}
-        </main>
-        <Footer />
-        <WhatsAppFloater />
-        <PageExitModal />
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   )
