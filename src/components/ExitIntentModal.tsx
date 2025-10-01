@@ -79,10 +79,10 @@ export default function ExitIntentModal({ isOpen, onClose }: ExitIntentModalProp
       if (response.ok) {
         setIsSuccess(true);
         
-        // Save successful submission to sessionStorage
+        // Save successful submission to localStorage (persists across sessions)
         if (typeof window !== 'undefined') {
-          sessionStorage.setItem('exitIntentModalShown', 'true');
-          sessionStorage.setItem('exitIntentModalAction', 'submitted');
+          localStorage.setItem('exitIntentModalShown', 'true');
+          localStorage.setItem('exitIntentModalAction', 'submitted');
         }
         
         // Close modal after showing success message

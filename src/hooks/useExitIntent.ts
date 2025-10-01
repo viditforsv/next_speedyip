@@ -12,21 +12,21 @@ export function useExitIntent(): UseExitIntentReturn {
   const [shouldShowModal, setShouldShowModal] = useState(false);
   const [hasTriggered, setHasTriggered] = useState(false);
 
-  // Check if modal was already shown in this session
+  // Check if modal was already shown or submitted
   const checkSessionHistory = useCallback(() => {
     if (typeof window === 'undefined') return false;
     
-    // Check if modal was already shown in this session
-    return sessionStorage.getItem('exitIntentModalShown') === 'true';
+    // Check if modal was already shown or form was submitted
+    return localStorage.getItem('exitIntentModalShown') === 'true';
   }, []);
 
-  // Save modal interaction to sessionStorage
+  // Save modal interaction to localStorage
   const saveModalInteraction = useCallback((action: 'closed' | 'submitted') => {
     if (typeof window === 'undefined') return;
     
-    // Mark modal as shown in this session
-    sessionStorage.setItem('exitIntentModalShown', 'true');
-    sessionStorage.setItem('exitIntentModalAction', action);
+    // Mark modal as shown permanently
+    localStorage.setItem('exitIntentModalShown', 'true');
+    localStorage.setItem('exitIntentModalAction', action);
   }, []);
 
   const triggerExitIntent = useCallback(() => {
