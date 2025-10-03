@@ -137,10 +137,9 @@ export default function StageTimeline() {
               <Card 
                 key={stage.id}
                 className={`cursor-pointer transition-all duration-300 ${
-                  activeStage === stage.id ? 'ring-2 shadow-lg' : 'hover:shadow-md'
+                  activeStage === stage.id ? 'ring-2 ring-blue-600 shadow-lg' : 'hover:shadow-md'
                 }`}
                 style={{
-                  ringColor: activeStage === stage.id ? '#0066B2' : undefined,
                   backgroundColor: activeStage === stage.id ? '#e3f2fd' : '#ffffff'
                 }}
                 onClick={() => setActiveStage(stage.id)}
